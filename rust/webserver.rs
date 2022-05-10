@@ -5,13 +5,12 @@ extern crate futures;
 use futures::executor::ThreadPoolBuilder;
 
 fn main() {
-    let listener = TcpListener::bind("localhost:80").unwrap(); // bind listener
+    let listener = TcpListener::bind("localhost:80").unwrap();
 
     let mut pool_builder = ThreadPoolBuilder::new();
     pool_builder.pool_size(100);
-    let pool = pool_builder.create().expect("couldn't create threadpool");
+    let pool = pool_builder.create().expect("threadpool creation failed");
 
-    // Listen for an incoming connection.
     for stream in listener.incoming() {
         let stream = stream.unwrap();
 

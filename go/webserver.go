@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	// API routes
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "Hello")
 	})

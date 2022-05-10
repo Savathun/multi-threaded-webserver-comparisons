@@ -1,4 +1,4 @@
-install .net 6 to build, or just the executable included
+install .net 6 to build, or just use the executable included
 - build and run:
 ```shell
 dotnet run

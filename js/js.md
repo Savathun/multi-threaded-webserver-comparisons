@@ -4,6 +4,4 @@
 node webserver.js
 ```
 
-code from: [https://deepu.tech/concurrency-in-modern-languages-js/](https://deepu.tech/concurrency-in-modern-languages-js/)
-
 implementation type: multithreaded

@@ -31,4 +31,6 @@ drill --benchmark benchmark-2000.yml --stats -q >> $dir/drill.txt
 wrk -t8 -c500 -d30s http://localhost > $dir/wrk.txt
 ```
 
+g++ -o webserver webserver.cpp -I$BOOST_ROOT -I. -L$BOOST_ROOT/stage/lib -lboost_system -pthread
+
 
